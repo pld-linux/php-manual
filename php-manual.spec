@@ -1,13 +1,10 @@
-# TODO:
-# - should package names use lang names from archive filenames or ISO-compliant
-#   ll[_CC] codes?
 Summary:	PHP manual
 Summary(pl):	Podrêcznik do PHP
 Name:		php-manual
 # last updated - is there better scheme?
 Version:	20030419
 Release:	0.1
-License:	- (enter GPL/LGPL/BSD/BSD-like/other license name here)
+License:	GPL v2+ (except "Extending PHP 4.0" section on Open Publication License)
 Group:		Documentation
 Source0:	http://www.php.net/distributions/manual/php_manual_en.tar.bz2
 # Source0-md5:	d89cb5124f95d2c30fb0d0e2dfe5de4e
@@ -142,18 +139,6 @@ PHP manual translated to Hebrew language.
 %description he -l pl
 Podrêcznik do PHP przet³umaczony na jêzyk hebrajski.
 
-%package hk
-# hk or zh_HK?
-Summary:	PHP manual translated to Chinese (Hong Kong Cantonese) language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk chiñski (kantonu Hong Kong)
-Group:		Documentation
-
-%description hk
-PHP manual translated to Chinese (Hong Kong Cantonese) language.
-
-%description hk -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk chiñski (kantonu Hong Kong).
-
 %package hu
 Summary:	PHP manual translated to Hungarian language
 Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk wêgierski
@@ -187,16 +172,15 @@ PHP manual translated to Japanese language.
 %description ja -l pl
 Podrêcznik do PHP przet³umaczony na jêzyk japoñski.
 
-%package kr
-# kr or ko?
+%package ko
 Summary:	PHP manual translated to Korean language
 Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk koreañski
 Group:		Documentation
 
-%description kr
+%description ko
 PHP manual translated to Korean language.
 
-%description kr -l pl
+%description ko -l pl
 Podrêcznik do PHP przet³umaczony na jêzyk koreañski.
 
 %package nl
@@ -299,39 +283,162 @@ PHP manual translated to Turkish language.
 %description tr -l pl
 Podrêcznik do PHP przet³umaczony na jêzyk turecki.
 
-%package tw
-# tw or zh_TW?
-Summary:	PHP manual translated to Chinese (traditional, Taiwanian) language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk chiñski (tradycyjny, tajwañski)
-Group:		Documentation
-
-%description tw
-PHP manual translated to Chinese (Traditional, Taiwanian) language.
-
-%description tw -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk chiñski (tradycyjny,
-tajwañski).
-
-%package zh
-# zh or zh_CN?
+%package zh_CN
 Summary:	PHP manual translated to Chinese (simplified) language
 Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk chiñski (uproszczony)
 Group:		Documentation
 
-%description zh
+%description zh_CN
 PHP manual translated to Chinese (simplified) language.
 
-%description zh -l pl
+%description zh_CN -l pl
 Podrêcznik do PHP przet³umaczony na jêzyk chiñski (uproszczony).
+
+%package zh_HK
+Summary:	PHP manual translated to Chinese (Hong Kong Cantonese) language
+Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk chiñski (kantonu Hong Kong)
+Group:		Documentation
+
+%description zh_HK
+PHP manual translated to Chinese (Hong Kong Cantonese) language.
+
+%description zh_HK -l pl
+Podrêcznik do PHP przet³umaczony na jêzyk chiñski (kantonu Hong Kong).
+
+%package zh_TW
+Summary:	PHP manual translated to Chinese (traditional, Taiwanian) language
+Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk chiñski (tradycyjny, tajwañski)
+Group:		Documentation
+
+%description zh_TW
+PHP manual translated to Chinese (Traditional, Taiwanian) language.
+
+%description zh_TW -l pl
+Podrêcznik do PHP przet³umaczony na jêzyk chiñski (tradycyjny,
+tajwañski).
 
 %prep
 %setup -q -c -T
+install -d en cs de es fi fr he hk hu it ja kr nl pl pt_BR ro ru sk sl sv tr tw zh
+tar xjf %{SOURCE0} -C en
+tar xjf %{SOURCE1} -C cs
+tar xjf %{SOURCE2} -C de
+tar xjf %{SOURCE3} -C es
+tar xjf %{SOURCE4} -C fi
+tar xjf %{SOURCE5} -C fr
+tar xjf %{SOURCE6} -C he
+tar xjf %{SOURCE7} -C hk
+tar xjf %{SOURCE8} -C hu
+tar xjf %{SOURCE9} -C it
+tar xjf %{SOURCE10} -C ja
+tar xjf %{SOURCE11} -C kr
+tar xjf %{SOURCE12} -C nl
+tar xjf %{SOURCE13} -C pl
+tar xjf %{SOURCE14} -C pt_BR
+tar xjf %{SOURCE15} -C ro
+tar xjf %{SOURCE16} -C ru
+tar xjf %{SOURCE17} -C sk
+tar xjf %{SOURCE18} -C sl
+tar xjf %{SOURCE19} -C sv
+tar xjf %{SOURCE20} -C tr
+tar xjf %{SOURCE21} -C tw
+tar xjf %{SOURCE22} -C zh
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files en
 %defattr(644,root,root,755)
+%doc en/*
+
+%files cs
+%defattr(644,root,root,755)
+%doc cs/*
+
+%files de
+%defattr(644,root,root,755)
+%doc de/*
+
+%files es
+%defattr(644,root,root,755)
+%doc es/*
+
+%files fi
+%defattr(644,root,root,755)
+%doc fi/*
+
+%files fr
+%defattr(644,root,root,755)
+%doc fr/*
+
+%files he
+%defattr(644,root,root,755)
+%doc he/*
+
+%files hu
+%defattr(644,root,root,755)
+%doc hu/*
+
+%files it
+%defattr(644,root,root,755)
+%doc it/*
+
+%files ja
+%defattr(644,root,root,755)
+%doc ja/*
+
+%files ko
+%defattr(644,root,root,755)
+%doc kr/*
+
+%files nl
+%defattr(644,root,root,755)
+%doc nl/*
+
+%files pl
+%defattr(644,root,root,755)
+%doc pl/*
+
+%files pt_BR
+%defattr(644,root,root,755)
+%doc pt_BR/*
+
+%files ro
+%defattr(644,root,root,755)
+%doc ro/*
+
+%files ru
+%defattr(644,root,root,755)
+%doc ru/*
+
+%files sk
+%defattr(644,root,root,755)
+%doc sk/*
+
+%files sl
+%defattr(644,root,root,755)
+%doc sl/*
+
+%files sv
+%defattr(644,root,root,755)
+%doc sv/*
+
+%files tr
+%defattr(644,root,root,755)
+%doc tr/*
+
+%files zh_CN
+%defattr(644,root,root,755)
+%doc zh/*
+
+%files zh_HK
+%defattr(644,root,root,755)
+%doc hk/*
+
+%files zh_TW
+%defattr(644,root,root,755)
+%doc tw/*
