@@ -400,23 +400,28 @@ rm -rf $RPM_BUILD_ROOT
 
 %files de
 %defattr(644,root,root,755)
-%doc de/*
+%doc de/[a-m]*
+%doc de/[!a-m]*
 
 %files el
 %defattr(644,root,root,755)
-%doc el/*
+%doc el/[a-m]*
+%doc el/[!a-m]*
 
 %files es
 %defattr(644,root,root,755)
-%doc es/*
+%doc es/[a-m]*
+%doc es/[!a-m]*
 
 %files fi
 %defattr(644,root,root,755)
-%doc fi/*
+%doc fi/[a-m]*
+%doc fi/[!a-m]*
 
 %files fr
 %defattr(644,root,root,755)
-%doc fr/*
+%doc fr/[a-m]*
+%doc fr/[!a-m]*
 
 %files he
 %defattr(644,root,root,755)
@@ -424,15 +429,18 @@ rm -rf $RPM_BUILD_ROOT
 
 %files hu
 %defattr(644,root,root,755)
-%doc hu/*
+%doc hu/[a-m]*
+%doc hu/[!a-m]*
 
 %files it
 %defattr(644,root,root,755)
-%doc it/*
+%doc it/[a-m]*
+%doc it/[!a-m]*
 
 %files ja
 %defattr(644,root,root,755)
-%doc ja/*
+%doc ja/[a-m]*
+%doc ja/[!a-m]*
 
 %files ko
 %defattr(644,root,root,755)
@@ -440,7 +448,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files nl
 %defattr(644,root,root,755)
-%doc nl/*
+%doc nl/[a-m]*
+%doc nl/[!a-m]*
 
 %files pl
 %defattr(644,root,root,755)
@@ -448,27 +457,33 @@ rm -rf $RPM_BUILD_ROOT
 
 %files pt_BR
 %defattr(644,root,root,755)
-%doc pt_BR/*
+%doc pt_BR/[a-m]*
+%doc pt_BR/[!a-m]*
 
 %files ro
 %defattr(644,root,root,755)
-%doc ro/*
+%doc ro/[a-m]*
+%doc ro/[!a-m]*
 
 %files ru
 %defattr(644,root,root,755)
-%doc ru/*
+%doc ru/[a-m]*
+%doc ru/[!a-m]*
 
 %files sk
 %defattr(644,root,root,755)
-%doc sk/*
+%doc sk/[a-m]*
+%doc sk/[!a-m]*
 
 %files sl
 %defattr(644,root,root,755)
-%doc sl/*
+%doc sl/[a-m]*
+%doc sl/[!a-m]*
 
 %files sv
 %defattr(644,root,root,755)
-%doc sv/*
+%doc sv/[a-m]*
+%doc sv/[!a-m]*
 
 %files tr
 %defattr(644,root,root,755)
@@ -476,12 +491,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %files zh_CN
 %defattr(644,root,root,755)
-%doc zh/*
+%doc zh/[a-m]*
+%doc zh/[!a-m]*
 
 %files zh_HK
 %defattr(644,root,root,755)
-%doc hk/*
+%doc hk/[a-m]*
+%doc hk/[!a-m]*
 
 %files zh_TW
 %defattr(644,root,root,755)
-%doc tw/*
+%doc tw/[a-m]*
+%doc tw/[!a-m]*
