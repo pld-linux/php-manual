@@ -53,6 +53,7 @@ Source21:	http://www.php.net/distributions/manual/php_manual_tw.tar.bz2
 Source22:	http://www.php.net/distributions/manual/php_manual_zh.tar.bz2
 # Source22-md5:	b8f4b06d7b65349f9401b49f25df103b
 URL:		http://www.php.net/docs.php
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
