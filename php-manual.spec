@@ -1,5 +1,5 @@
 Summary:	PHP manual
-Summary(pl):	Podrêcznik do PHP
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP
 Name:		php-manual
 # last updated - is there better scheme?
 Version:	20051028
@@ -68,297 +68,297 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 PHP manual.
 
-%description -l pl
-Podrêcznik do PHP.
+%description -l pl.UTF-8
+PodrÄ™cznik do PHP.
 
 %package en
 Summary:	PHP manual in English language
-Summary(pl):	Podrêcznik do PHP w jêzyku angielskim
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP w jÄ™zyku angielskim
 Group:		Documentation
 Obsoletes:	php-doc
 
 %description en
 PHP manual in English language.
 
-%description en -l pl
-Podrêcznik do PHP w jêzyku angielskim.
+%description en -l pl.UTF-8
+PodrÄ™cznik do PHP w jÄ™zyku angielskim.
 
 %package ar
 Summary:	PHP manual translated to Arabic language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk arabski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk arabski
 Group:		Documentation
 
 %description ar
 PHP manual translated to Arabic language.
 
-%description ar -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk arabski.
+%description ar -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk arabski.
 
 %package cs
 Summary:	PHP manual translated to Czech language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk czeski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk czeski
 Group:		Documentation
 
 %description cs
 PHP manual translated to Czech language.
 
-%description cs -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk czeski.
+%description cs -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk czeski.
 
 %package da
 Summary:	PHP manual translated to Danish language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk duñski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk duÅ„ski
 Group:		Documentation
 
 %description da
 PHP manual translated to Danish language.
 
-%description da -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk duñski.
+%description da -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk duÅ„ski.
 
 %package de
 Summary:	PHP manual translated to German language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk niemiecki
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk niemiecki
 Group:		Documentation
 
 %description de
 PHP manual translated to German language.
 
-%description de -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk niemiecki.
+%description de -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk niemiecki.
 
 %package el
 Summary:	PHP manual translated to Greek language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk grecki
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk grecki
 Group:		Documentation
 
 %description el
 PHP manual translated to Greek language.
 
-%description el -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk grecki.
+%description el -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk grecki.
 
 %package es
 Summary:	PHP manual translated to Spanish language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk hiszpañski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk hiszpaÅ„ski
 Group:		Documentation
 
 %description es
 PHP manual translated to Spanish language.
 
-%description es -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk hiszpañski.
+%description es -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk hiszpaÅ„ski.
 
 %package fi
 Summary:	PHP manual translated to Finnish language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk fiñski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk fiÅ„ski
 Group:		Documentation
 
 %description fi
 PHP manual translated to Finnish language.
 
-%description fi -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk fiñski.
+%description fi -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk fiÅ„ski.
 
 %package fr
 Summary:	PHP manual translated to French language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk francuski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk francuski
 Group:		Documentation
 
 %description fr
 PHP manual translated to French language.
 
-%description fr -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk francuski.
+%description fr -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk francuski.
 
 %package he
 Summary:	PHP manual translated to Hebrew language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk hebrajski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk hebrajski
 Group:		Documentation
 
 %description he
 PHP manual translated to Hebrew language.
 
-%description he -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk hebrajski.
+%description he -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk hebrajski.
 
 %package hu
 Summary:	PHP manual translated to Hungarian language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk wêgierski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk wÄ™gierski
 Group:		Documentation
 
 %description hu
 PHP manual translated to Hungarian language.
 
-%description hu -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk wêgierski.
+%description hu -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk wÄ™gierski.
 
 %package it
 Summary:	PHP manual translated to Italian language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk w³oski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk wÅ‚oski
 Group:		Documentation
 
 %description it
 PHP manual translated to Italian language.
 
-%description it -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk w³oski.
+%description it -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk wÅ‚oski.
 
 %package ja
 Summary:	PHP manual translated to Japanese language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk japoñski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk japoÅ„ski
 Group:		Documentation
 
 %description ja
 PHP manual translated to Japanese language.
 
-%description ja -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk japoñski.
+%description ja -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk japoÅ„ski.
 
 %package ko
 Summary:	PHP manual translated to Korean language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk koreañski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk koreaÅ„ski
 Group:		Documentation
 
 %description ko
 PHP manual translated to Korean language.
 
-%description ko -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk koreañski.
+%description ko -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk koreaÅ„ski.
 
 %package nl
 Summary:	PHP manual translated to Dutch language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk holenderski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk holenderski
 Group:		Documentation
 
 %description nl
 PHP manual translated to Dutch language.
 
-%description nl -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk holenderski.
+%description nl -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk holenderski.
 
 %package pl
 Summary:	PHP manual translated to Polish language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk polski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk polski
 Group:		Documentation
 
 %description pl
 PHP manual translated to Polish language.
 
-%description pl -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk polski.
+%description pl -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk polski.
 
 %package pt_BR
 Summary:	PHP manual translated to Brazilian Portuguese language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk portugalski w wersji brazylijskiej
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk portugalski w wersji brazylijskiej
 Group:		Documentation
 
 %description pt_BR
 PHP manual translated to Brazilian Portuguese language.
 
-%description pt_BR -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk portugalski w wersji
+%description pt_BR -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk portugalski w wersji
 brazylijskiej.
 
 %package ro
 Summary:	PHP manual translated to Romanian language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk rumuñski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk rumuÅ„ski
 Group:		Documentation
 
 %description ro
 PHP manual translated to Romanian language.
 
-%description ro -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk rumuñski.
+%description ro -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk rumuÅ„ski.
 
 %package ru
 Summary:	PHP manual translated to Russian language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk rosyjski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk rosyjski
 Group:		Documentation
 
 %description ru
 PHP manual translated to Russian language.
 
-%description ru -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk rosyjski.
+%description ru -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk rosyjski.
 
 %package sk
 Summary:	PHP manual translated to Slovak language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk s³owacki
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk sÅ‚owacki
 Group:		Documentation
 
 %description sk
 PHP manual translated to Slovak language.
 
-%description sk -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk s³owacki.
+%description sk -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk sÅ‚owacki.
 
 %package sl
 Summary:	PHP manual translated to Slovenian language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk s³oweñski
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk sÅ‚oweÅ„ski
 Group:		Documentation
 
 %description sl
 PHP manual translated to Slovenian language.
 
-%description sl -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk s³oweñski.
+%description sl -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk sÅ‚oweÅ„ski.
 
 %package sv
 Summary:	PHP manual translated to Swedish language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk szwedzki
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk szwedzki
 Group:		Documentation
 
 %description sv
 PHP manual translated to Swedish language.
 
-%description sv -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk szwedzki.
+%description sv -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk szwedzki.
 
 %package tr
 Summary:	PHP manual translated to Turkish language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk turecki
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk turecki
 Group:		Documentation
 
 %description tr
 PHP manual translated to Turkish language.
 
-%description tr -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk turecki.
+%description tr -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk turecki.
 
 %package zh_CN
 Summary:	PHP manual translated to Chinese (simplified) language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk chiñski (uproszczony)
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk chiÅ„ski (uproszczony)
 Group:		Documentation
 
 %description zh_CN
 PHP manual translated to Chinese (simplified) language.
 
-%description zh_CN -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk chiñski (uproszczony).
+%description zh_CN -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk chiÅ„ski (uproszczony).
 
 %package zh_HK
 Summary:	PHP manual translated to Chinese (Hong Kong Cantonese) language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk chiñski (kantonu Hong Kong)
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk chiÅ„ski (kantonu Hong Kong)
 Group:		Documentation
 
 %description zh_HK
 PHP manual translated to Chinese (Hong Kong Cantonese) language.
 
-%description zh_HK -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk chiñski (kantonu Hong Kong).
+%description zh_HK -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk chiÅ„ski (kantonu Hong Kong).
 
 %package zh_TW
 Summary:	PHP manual translated to Chinese (traditional, Taiwanian) language
-Summary(pl):	Podrêcznik do PHP przet³umaczony na jêzyk chiñski (tradycyjny, tajwañski)
+Summary(pl.UTF-8):   PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk chiÅ„ski (tradycyjny, tajwaÅ„ski)
 Group:		Documentation
 
 %description zh_TW
 PHP manual translated to Chinese (Traditional, Taiwanian) language.
 
-%description zh_TW -l pl
-Podrêcznik do PHP przet³umaczony na jêzyk chiñski (tradycyjny,
-tajwañski).
+%description zh_TW -l pl.UTF-8
+PodrÄ™cznik do PHP przetÅ‚umaczony na jÄ™zyk chiÅ„ski (tradycyjny,
+tajwaÅ„ski).
 
 %prep
 %setup -q -c -T
