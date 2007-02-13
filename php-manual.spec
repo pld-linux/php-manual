@@ -1,5 +1,5 @@
 Summary:	PHP manual
-Summary(pl.UTF-8):   Podręcznik do PHP
+Summary(pl.UTF-8):	Podręcznik do PHP
 Name:		php-manual
 # last updated - is there better scheme?
 Version:	20051028
@@ -73,7 +73,7 @@ Podręcznik do PHP.
 
 %package en
 Summary:	PHP manual in English language
-Summary(pl.UTF-8):   Podręcznik do PHP w języku angielskim
+Summary(pl.UTF-8):	Podręcznik do PHP w języku angielskim
 Group:		Documentation
 Obsoletes:	php-doc
 
@@ -85,7 +85,7 @@ Podręcznik do PHP w języku angielskim.
 
 %package ar
 Summary:	PHP manual translated to Arabic language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język arabski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język arabski
 Group:		Documentation
 
 %description ar
@@ -96,7 +96,7 @@ Podręcznik do PHP przetłumaczony na język arabski.
 
 %package cs
 Summary:	PHP manual translated to Czech language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język czeski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język czeski
 Group:		Documentation
 
 %description cs
@@ -107,7 +107,7 @@ Podręcznik do PHP przetłumaczony na język czeski.
 
 %package da
 Summary:	PHP manual translated to Danish language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język duński
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język duński
 Group:		Documentation
 
 %description da
@@ -118,7 +118,7 @@ Podręcznik do PHP przetłumaczony na język duński.
 
 %package de
 Summary:	PHP manual translated to German language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język niemiecki
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język niemiecki
 Group:		Documentation
 
 %description de
@@ -129,7 +129,7 @@ Podręcznik do PHP przetłumaczony na język niemiecki.
 
 %package el
 Summary:	PHP manual translated to Greek language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język grecki
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język grecki
 Group:		Documentation
 
 %description el
@@ -140,7 +140,7 @@ Podręcznik do PHP przetłumaczony na język grecki.
 
 %package es
 Summary:	PHP manual translated to Spanish language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język hiszpański
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język hiszpański
 Group:		Documentation
 
 %description es
@@ -151,7 +151,7 @@ Podręcznik do PHP przetłumaczony na język hiszpański.
 
 %package fi
 Summary:	PHP manual translated to Finnish language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język fiński
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język fiński
 Group:		Documentation
 
 %description fi
@@ -162,7 +162,7 @@ Podręcznik do PHP przetłumaczony na język fiński.
 
 %package fr
 Summary:	PHP manual translated to French language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język francuski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język francuski
 Group:		Documentation
 
 %description fr
@@ -173,7 +173,7 @@ Podręcznik do PHP przetłumaczony na język francuski.
 
 %package he
 Summary:	PHP manual translated to Hebrew language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język hebrajski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język hebrajski
 Group:		Documentation
 
 %description he
@@ -184,7 +184,7 @@ Podręcznik do PHP przetłumaczony na język hebrajski.
 
 %package hu
 Summary:	PHP manual translated to Hungarian language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język węgierski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język węgierski
 Group:		Documentation
 
 %description hu
@@ -195,7 +195,7 @@ Podręcznik do PHP przetłumaczony na język węgierski.
 
 %package it
 Summary:	PHP manual translated to Italian language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język włoski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język włoski
 Group:		Documentation
 
 %description it
@@ -206,7 +206,7 @@ Podręcznik do PHP przetłumaczony na język włoski.
 
 %package ja
 Summary:	PHP manual translated to Japanese language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język japoński
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język japoński
 Group:		Documentation
 
 %description ja
@@ -217,7 +217,7 @@ Podręcznik do PHP przetłumaczony na język japoński.
 
 %package ko
 Summary:	PHP manual translated to Korean language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język koreański
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język koreański
 Group:		Documentation
 
 %description ko
@@ -228,7 +228,7 @@ Podręcznik do PHP przetłumaczony na język koreański.
 
 %package nl
 Summary:	PHP manual translated to Dutch language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język holenderski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język holenderski
 Group:		Documentation
 
 %description nl
@@ -239,7 +239,7 @@ Podręcznik do PHP przetłumaczony na język holenderski.
 
 %package pl
 Summary:	PHP manual translated to Polish language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język polski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język polski
 Group:		Documentation
 
 %description pl
@@ -250,7 +250,7 @@ Podręcznik do PHP przetłumaczony na język polski.
 
 %package pt_BR
 Summary:	PHP manual translated to Brazilian Portuguese language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język portugalski w wersji brazylijskiej
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język portugalski w wersji brazylijskiej
 Group:		Documentation
 
 %description pt_BR
@@ -262,7 +262,7 @@ brazylijskiej.
 
 %package ro
 Summary:	PHP manual translated to Romanian language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język rumuński
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język rumuński
 Group:		Documentation
 
 %description ro
@@ -273,7 +273,7 @@ Podręcznik do PHP przetłumaczony na język rumuński.
 
 %package ru
 Summary:	PHP manual translated to Russian language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język rosyjski
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język rosyjski
 Group:		Documentation
 
 %description ru
@@ -284,7 +284,7 @@ Podręcznik do PHP przetłumaczony na język rosyjski.
 
 %package sk
 Summary:	PHP manual translated to Slovak language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język słowacki
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język słowacki
 Group:		Documentation
 
 %description sk
@@ -295,7 +295,7 @@ Podręcznik do PHP przetłumaczony na język słowacki.
 
 %package sl
 Summary:	PHP manual translated to Slovenian language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język słoweński
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język słoweński
 Group:		Documentation
 
 %description sl
@@ -306,7 +306,7 @@ Podręcznik do PHP przetłumaczony na język słoweński.
 
 %package sv
 Summary:	PHP manual translated to Swedish language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język szwedzki
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język szwedzki
 Group:		Documentation
 
 %description sv
@@ -317,7 +317,7 @@ Podręcznik do PHP przetłumaczony na język szwedzki.
 
 %package tr
 Summary:	PHP manual translated to Turkish language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język turecki
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język turecki
 Group:		Documentation
 
 %description tr
@@ -328,7 +328,7 @@ Podręcznik do PHP przetłumaczony na język turecki.
 
 %package zh_CN
 Summary:	PHP manual translated to Chinese (simplified) language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język chiński (uproszczony)
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język chiński (uproszczony)
 Group:		Documentation
 
 %description zh_CN
@@ -339,7 +339,7 @@ Podręcznik do PHP przetłumaczony na język chiński (uproszczony).
 
 %package zh_HK
 Summary:	PHP manual translated to Chinese (Hong Kong Cantonese) language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język chiński (kantonu Hong Kong)
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język chiński (kantonu Hong Kong)
 Group:		Documentation
 
 %description zh_HK
@@ -350,7 +350,7 @@ Podręcznik do PHP przetłumaczony na język chiński (kantonu Hong Kong).
 
 %package zh_TW
 Summary:	PHP manual translated to Chinese (traditional, Taiwanian) language
-Summary(pl.UTF-8):   Podręcznik do PHP przetłumaczony na język chiński (tradycyjny, tajwański)
+Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język chiński (tradycyjny, tajwański)
 Group:		Documentation
 
 %description zh_TW
