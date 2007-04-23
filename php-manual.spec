@@ -1,5 +1,5 @@
 # NOTE
-# - Needs 840MB in BUILD and the same in RPM_BUILD_ROOT to package
+# - Needs 840MB in RPM_BUILD_ROOT to package
 Summary:	PHP manual
 Summary(pl.UTF-8):	Podręcznik do PHP
 Name:		php-manual
@@ -363,44 +363,44 @@ Podręcznik do PHP przetłumaczony na język chiński (tradycyjny,
 tajwański).
 
 %prep
-%setup -q -c -T
-install -d en cs da de el es fi fr he hk hu it ja kr nl pl pt_BR ro ru sk sl sv tr tw zh
-tar xzf %{SOURCE0} -C en --strip-components=1
-#tar xzf %{SOURCE1} -C ar
-tar xzf %{SOURCE2} -C cs --strip-components=1
-tar xzf %{SOURCE3} -C da --strip-components=1
-tar xzf %{SOURCE4} -C de --strip-components=1
-tar xzf %{SOURCE5} -C el --strip-components=1
-tar xzf %{SOURCE6} -C es --strip-components=1
-tar xzf %{SOURCE7} -C fi --strip-components=1
-tar xzf %{SOURCE8} -C fr --strip-components=1
-tar xjf %{SOURCE9} -C he
-tar xzf %{SOURCE10} -C hk
-tar xzf %{SOURCE11} -C hu --strip-components=1
-tar xzf %{SOURCE12} -C it --strip-components=1
-tar xzf %{SOURCE13} -C ja --strip-components=1
-tar xzf %{SOURCE14} -C kr
-tar xzf %{SOURCE15} -C nl --strip-components=1
-tar xzf %{SOURCE16} -C pl --strip-components=1
-tar xzf %{SOURCE17} -C pt_BR --strip-components=1
-tar xzf %{SOURCE18} -C ro
-tar xzf %{SOURCE19} -C ru --strip-components=1
-tar xzf %{SOURCE20} -C sk --strip-components=1
-tar xzf %{SOURCE21} -C sl
-tar xzf %{SOURCE22} -C sv --strip-components=1
-tar xjf %{SOURCE23} -C tr
-tar xzf %{SOURCE24} -C tw --strip-components=1
-tar xzf %{SOURCE25} -C zh --strip-components=1
-
-find -name CVS | xargs rm -vf
+%setup -qcT
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_docdir}
-for a in */; do
-	lang=${a%/}
-	cp -a $lang $RPM_BUILD_ROOT%{_docdir}/%{name}-$lang
-done
+if [ ! -f install.stamp -o ! -d $RPM_BUILD_ROOT ]; then
+	rm -rf installed.stamp $RPM_BUILD_ROOT
+	install -d $RPM_BUILD_ROOT%{_docdir}/%{name}-{en,cs,da,de,el,es,fi,fr,he,hk,hu,it,ja,kr,nl,pl,pt_BR,ro,ru,sk,sl,sv,tr,tw,zh}
+
+	tar xzf %{SOURCE0} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-en --strip-components=1
+	#tar xzf %{SOURCE1} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-ar
+	tar xzf %{SOURCE2} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-cs --strip-components=1
+	tar xzf %{SOURCE3} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-da --strip-components=1
+	tar xzf %{SOURCE4} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-de --strip-components=1
+	tar xzf %{SOURCE5} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-el --strip-components=1
+	tar xzf %{SOURCE6} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-es --strip-components=1
+	tar xzf %{SOURCE7} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-fi --strip-components=1
+	tar xzf %{SOURCE8} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-fr --strip-components=1
+	tar xjf %{SOURCE9} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-he
+	tar xzf %{SOURCE10} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-hk
+	tar xzf %{SOURCE11} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-hu --strip-components=1
+	tar xzf %{SOURCE12} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-it --strip-components=1
+	tar xzf %{SOURCE13} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-ja --strip-components=1
+	tar xzf %{SOURCE14} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-kr
+	tar xzf %{SOURCE15} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-nl --strip-components=1
+	tar xzf %{SOURCE16} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-pl --strip-components=1
+	tar xzf %{SOURCE17} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-pt_BR --strip-components=1
+	tar xzf %{SOURCE18} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-ro
+	tar xzf %{SOURCE19} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-ru --strip-components=1
+	tar xzf %{SOURCE20} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-sk --strip-components=1
+	tar xzf %{SOURCE21} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-sl
+	tar xzf %{SOURCE22} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-sv --strip-components=1
+	tar xjf %{SOURCE23} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-tr
+	tar xzf %{SOURCE24} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-tw --strip-components=1
+	tar xzf %{SOURCE25} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-zh --strip-components=1
+
+	touch install.stamp
+fi
+
+find $RPM_BUILD_ROOT%{_docdir} -name CVS | xargs rm -vrf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
