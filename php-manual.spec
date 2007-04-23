@@ -13,7 +13,7 @@ Group:		Documentation
 Source0:	http://static.php.net/www.php.net/distributions/manual/php_manual_en.tar.gz
 # Source0-md5:	a0fa7d8dd0855aea8d3ab61ee2680942
 #Source1:	http://static.php.net/www.php.net/distributions/manual/php_manual_ar.tar.gz
-# Source1-md5:	0057240f51f122eed3e9c7c0ed397494
+#xSource1-md5:	0057240f51f122eed3e9c7c0ed397494
 Source2:	http://static.php.net/www.php.net/distributions/manual/php_manual_cs.tar.gz
 # Source2-md5:	9f10c985bb4de9c283f710f1e9e2095e
 Source3:	http://static.php.net/www.php.net/distributions/manual/php_manual_da.tar.gz
