@@ -353,8 +353,6 @@ for src in $sources; do
 	unpack $src
 done
 
-find -name CVS | xargs rm -vr
-
 %build
 for l in %{name}-*/; do
 	date=$(%{__perl} -ne '/pubdate/ && />(.+)</ and print $1' $l/index.html)
@@ -362,22 +360,18 @@ for l in %{name}-*/; do
 done | tee versions.txt
 
 %install
-if [ ! -f install.stamp -o ! -d $RPM_BUILD_ROOT ]; then
-	rm -rf installed.stamp $RPM_BUILD_ROOT
-	install -d $RPM_BUILD_ROOT%{_docdir}
+rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_docdir}
 
-	# test if we can hardlink -- %{_builddir} and $RPM_BUILD_ROOT on same partition
-	touch COPYING
-	if cp -al COPYING $RPM_BUILD_ROOT%{_docdir}/COPYING 2>/dev/null; then
-		l=l
-		rm -f $RPM_BUILD_ROOT%{_docdir}/COPYING
-	fi
-	rm -f COPYING
-
-	cp -a$l %{name}-* $RPM_BUILD_ROOT%{_docdir}
-
-	touch install.stamp
+# test if we can hardlink -- %{_builddir} and $RPM_BUILD_ROOT on same partition
+touch COPYING
+if cp -al COPYING $RPM_BUILD_ROOT%{_docdir}/COPYING 2>/dev/null; then
+	l=l
+	rm -f $RPM_BUILD_ROOT%{_docdir}/COPYING
 fi
+rm -f COPYING
+
+cp -a$l %{name}-* $RPM_BUILD_ROOT%{_docdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
