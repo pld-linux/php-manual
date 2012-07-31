@@ -1,67 +1,38 @@
 # NOTE
-# - Needs 840MB in RPM_BUILD_ROOT to package
+# - Needs 981MB in RPM_BUILD_ROOT to package
+# - easy way to update all sources with new/old manuals:
+#   lynx -dump http://www.php.net/distributions/manual/ | awk '/http.*php_manual.*.tar.gz/{printf("Source%d: %s\n", i++, $2)}'
+
 Summary:	PHP manual
 Summary(pl.UTF-8):	Podręcznik do PHP
 Name:		php-manual
 # last updated - is there better scheme?
-Version:	20070417
+Version:	20120727
 Release:	1
 License:	Open Publication License v1.0+
 Group:		Documentation
-# ar contains only figures
-# he,tr currently available only in .chm format
-Source0:	http://static.php.net/www.php.net/distributions/manual/php_manual_en.tar.gz
-# Source0-md5:	a0fa7d8dd0855aea8d3ab61ee2680942
-#Source1:	http://static.php.net/www.php.net/distributions/manual/php_manual_ar.tar.gz
-#xSource1-md5:	0057240f51f122eed3e9c7c0ed397494
-Source2:	http://static.php.net/www.php.net/distributions/manual/php_manual_cs.tar.gz
-# Source2-md5:	9f10c985bb4de9c283f710f1e9e2095e
-Source3:	http://static.php.net/www.php.net/distributions/manual/php_manual_da.tar.gz
-# Source3-md5:	93daf71b45d9aecf23166a5588614b93
-Source4:	http://static.php.net/www.php.net/distributions/manual/php_manual_de.tar.gz
-# Source4-md5:	2eb217e968ec001c410a29554320b9bf
-Source5:	http://static.php.net/www.php.net/distributions/manual/php_manual_el.tar.gz
-# Source5-md5:	d9ffb64049ea40af24c61107fbeb9d31
-Source6:	http://static.php.net/www.php.net/distributions/manual/php_manual_es.tar.gz
-# Source6-md5:	99188107c685ba7158b166ca5b24f244
-Source7:	http://static.php.net/www.php.net/distributions/manual/php_manual_fi.tar.gz
-# Source7-md5:	c2f7a86a5d05d3130d10d4282cabbbf5
-Source8:	http://static.php.net/www.php.net/distributions/manual/php_manual_fr.tar.gz
-# Source8-md5:	28191896bc1ebc64265c1a4044a8c00c
-Source9:	php_manual_he.tar.bz2
-# Source9-md5:	ff9e86415dcd9bca3b14394828b4bfde
-Source10:	http://static.php.net/www.php.net/distributions/manual/php_manual_hk.tar.gz
-# Source10-md5:	d120040e561e4d0ed1affe615c7a249a
-Source11:	http://static.php.net/www.php.net/distributions/manual/php_manual_hu.tar.gz
-# Source11-md5:	cfb3cfb99fa20dcbedbc68eb56be47a6
-Source12:	http://static.php.net/www.php.net/distributions/manual/php_manual_it.tar.gz
-# Source12-md5:	64d09735031be3e695954df335fafbce
-Source13:	http://static.php.net/www.php.net/distributions/manual/php_manual_ja.tar.gz
-# Source13-md5:	e41d957c1a88487370146f54c9e1db34
-Source14:	http://static.php.net/www.php.net/distributions/manual/php_manual_kr.tar.gz
-# Source14-md5:	8aca34a0456a71e5a1b5cad7bcc5fcb2
-Source15:	http://static.php.net/www.php.net/distributions/manual/php_manual_nl.tar.gz
-# Source15-md5:	88a920541caf81c0c4986bdaee77bd1a
-Source16:	http://static.php.net/www.php.net/distributions/manual/php_manual_pl.tar.gz
-# Source16-md5:	f880f2e233143d9aa691d1809a18c5d3
-Source17:	http://static.php.net/www.php.net/distributions/manual/php_manual_pt_BR.tar.gz
-# Source17-md5:	3983b6f514545e2e6722ee9029be1a6a
-Source18:	http://static.php.net/www.php.net/distributions/manual/php_manual_ro.tar.gz
-# Source18-md5:	992ace347445085cfdf20e9935535289
-Source19:	http://static.php.net/www.php.net/distributions/manual/php_manual_ru.tar.gz
-# Source19-md5:	710f8d74a37de20645e9927fa3fe3802
-Source20:	http://static.php.net/www.php.net/distributions/manual/php_manual_sk.tar.gz
-# Source20-md5:	674543f0cf7590e7636a339fac6ce823
-Source21:	http://static.php.net/www.php.net/distributions/manual/php_manual_sl.tar.gz
-# Source21-md5:	1f191812fced3704384da738e10423a0
-Source22:	http://static.php.net/www.php.net/distributions/manual/php_manual_sv.tar.gz
-# Source22-md5:	d7b142a5271d9cfd4c53e458a3f19ffd
-Source23:	php_manual_tr.tar.bz2
-# Source23-md5:	ccc53af840a7ecccec5900437b3a18f9
-Source24:	http://static.php.net/www.php.net/distributions/manual/php_manual_tw.tar.gz
-# Source24-md5:	5ccc4a2ec789f936f9c4dfeab5953606
-Source25:	http://static.php.net/www.php.net/distributions/manual/php_manual_zh.tar.gz
-# Source25-md5:	b392c0389e58b7a03caf7749aa358359
+Source0:	http://www.php.net/distributions/manual/php_manual_de.tar.gz
+# Source0-md5:	0f0f816c4846aeedf4627bd1072424a9
+Source1:	http://www.php.net/distributions/manual/php_manual_en.tar.gz
+# Source1-md5:	d2a36db770c77b52d4af5fd19ab7bd41
+Source2:	http://www.php.net/distributions/manual/php_manual_es.tar.gz
+# Source2-md5:	9d977633dff60df121c968184b39301f
+Source3:	http://www.php.net/distributions/manual/php_manual_fr.tar.gz
+# Source3-md5:	b7a1c3004b085e0bf7e31fba0db7c9c8
+Source4:	http://www.php.net/distributions/manual/php_manual_ja.tar.gz
+# Source4-md5:	794911f18ab64f9099cc4d4cc334cb31
+Source5:	http://www.php.net/distributions/manual/php_manual_pl.tar.gz
+# Source5-md5:	115f1b69dabe40cf312ef9843c12777d
+Source6:	http://www.php.net/distributions/manual/php_manual_pt_BR.tar.gz
+# Source6-md5:	4caff2177e00ff10add3831fe125d708
+Source7:	http://www.php.net/distributions/manual/php_manual_ro.tar.gz
+# Source7-md5:	c1eb977f9e6c1a34518b606ad6eb143c
+Source8:	http://www.php.net/distributions/manual/php_manual_ru.tar.gz
+# Source8-md5:	12b3ddd775c39d2a4fc3af240944d295
+Source9:	http://www.php.net/distributions/manual/php_manual_tr.tar.gz
+# Source9-md5:	3ee4d8b3cddbb2ec14b650d4f19a5724
+Source10:	http://www.php.net/distributions/manual/php_manual_zh.tar.gz
+# Source10-md5:	2146034be53f8a669c2e27f779c57730
 URL:		http://www.php.net/docs.php
 BuildRequires:	tar >= 1:1.15.1
 BuildArch:	noarch
@@ -364,37 +335,31 @@ tajwański).
 
 %prep
 %setup -qcT
+unpack() {
+	set -x
+	local src=$1
+	local bn=${src##*/}
+	local pn=${bn%.tar.gz}
+	local ln=${pn#php_manual_}
 
-install -d %{name}-{en,cs,da,de,el,es,fi,fr,he,hk,hu,it,ja,kr,nl,pl,pt_BR,ro,ru,sk,sl,sv,tr,tw,zh}
+	tar xzf $src
+	install -d %{name}-$ln
+	mv php-chunked-xhtml/* %{name}-$ln
+	rmdir php-chunked-xhtml
+}
 
-tar xzf %{SOURCE0} -C %{name}-en --strip-components=1
-#tar xzf %{SOURCE1} -C %{name}-ar
-tar xzf %{SOURCE2} -C %{name}-cs --strip-components=1
-tar xzf %{SOURCE3} -C %{name}-da --strip-components=1
-tar xzf %{SOURCE4} -C %{name}-de --strip-components=1
-tar xzf %{SOURCE5} -C %{name}-el --strip-components=1
-tar xzf %{SOURCE6} -C %{name}-es --strip-components=1
-tar xzf %{SOURCE7} -C %{name}-fi --strip-components=1
-tar xzf %{SOURCE8} -C %{name}-fr --strip-components=1
-tar xjf %{SOURCE9} -C %{name}-he
-tar xzf %{SOURCE10} -C %{name}-hk
-tar xzf %{SOURCE11} -C %{name}-hu --strip-components=1
-tar xzf %{SOURCE12} -C %{name}-it --strip-components=1
-tar xzf %{SOURCE13} -C %{name}-ja --strip-components=1
-tar xzf %{SOURCE14} -C %{name}-kr
-tar xzf %{SOURCE15} -C %{name}-nl --strip-components=1
-tar xzf %{SOURCE16} -C %{name}-pl --strip-components=1
-tar xzf %{SOURCE17} -C %{name}-pt_BR --strip-components=1
-tar xzf %{SOURCE18} -C %{name}-ro
-tar xzf %{SOURCE19} -C %{name}-ru --strip-components=1
-tar xzf %{SOURCE20} -C %{name}-sk --strip-components=1
-tar xzf %{SOURCE21} -C %{name}-sl
-tar xzf %{SOURCE22} -C %{name}-sv --strip-components=1
-tar xjf %{SOURCE23} -C %{name}-tr
-tar xzf %{SOURCE24} -C %{name}-tw --strip-components=1
-tar xzf %{SOURCE25} -C %{name}-zh --strip-components=1
+sources="%{expand:%(echo %(seq -f '%%%%SOURCE%g' 0 10 | tr '\n' ' '))}"
+for src in $sources; do
+	unpack $src
+done
 
-find -name CVS | xargs rm -vrf
+find -name CVS | xargs rm -vr
+
+%build
+for l in %{name}-*/; do
+	date=$(%{__perl} -ne '/pubdate/ && />(.+)</ and print $1' $l/index.html)
+	echo "$l $date"
+done | tee versions.txt
 
 %install
 if [ ! -f install.stamp -o ! -d $RPM_BUILD_ROOT ]; then
@@ -421,38 +386,47 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-en
 
-#%files ar
-#%defattr(644,root,root,755)
-#%doc %{_docdir}/%{name}-ar
+%if 0
+%files ar
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-ar
 
 %files cs
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-cs
+%endif
 
+%if 0
 %files da
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-da
+%endif
 
 %files de
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-de
 
+%if 0
 %files el
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-el
+%endif
 
 %files es
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-es
 
+%if 0
 %files fi
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-fi
+%endif
 
 %files fr
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-fr
 
+%if 0
 %files he
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-he
@@ -464,11 +438,13 @@ rm -rf $RPM_BUILD_ROOT
 %files it
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-it
+%endif
 
 %files ja
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-ja
 
+%if 0
 %files ko
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-kr
@@ -476,6 +452,7 @@ rm -rf $RPM_BUILD_ROOT
 %files nl
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-nl
+%endif
 
 %files pl
 %defattr(644,root,root,755)
@@ -493,6 +470,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-ru
 
+%if 0
 %files sk
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-sk
@@ -504,6 +482,7 @@ rm -rf $RPM_BUILD_ROOT
 %files sv
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-sv
+%endif
 
 %files tr
 %defattr(644,root,root,755)
@@ -513,6 +492,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-zh
 
+%if 0
 %files zh_HK
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-hk
@@ -520,3 +500,4 @@ rm -rf $RPM_BUILD_ROOT
 %files zh_TW
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-tw
+%endif
