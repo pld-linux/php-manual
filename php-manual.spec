@@ -365,42 +365,54 @@ tajwański).
 %prep
 %setup -qcT
 
+install -d %{name}-{en,cs,da,de,el,es,fi,fr,he,hk,hu,it,ja,kr,nl,pl,pt_BR,ro,ru,sk,sl,sv,tr,tw,zh}
+
+tar xzf %{SOURCE0} -C %{name}-en --strip-components=1
+#tar xzf %{SOURCE1} -C %{name}-ar
+tar xzf %{SOURCE2} -C %{name}-cs --strip-components=1
+tar xzf %{SOURCE3} -C %{name}-da --strip-components=1
+tar xzf %{SOURCE4} -C %{name}-de --strip-components=1
+tar xzf %{SOURCE5} -C %{name}-el --strip-components=1
+tar xzf %{SOURCE6} -C %{name}-es --strip-components=1
+tar xzf %{SOURCE7} -C %{name}-fi --strip-components=1
+tar xzf %{SOURCE8} -C %{name}-fr --strip-components=1
+tar xjf %{SOURCE9} -C %{name}-he
+tar xzf %{SOURCE10} -C %{name}-hk
+tar xzf %{SOURCE11} -C %{name}-hu --strip-components=1
+tar xzf %{SOURCE12} -C %{name}-it --strip-components=1
+tar xzf %{SOURCE13} -C %{name}-ja --strip-components=1
+tar xzf %{SOURCE14} -C %{name}-kr
+tar xzf %{SOURCE15} -C %{name}-nl --strip-components=1
+tar xzf %{SOURCE16} -C %{name}-pl --strip-components=1
+tar xzf %{SOURCE17} -C %{name}-pt_BR --strip-components=1
+tar xzf %{SOURCE18} -C %{name}-ro
+tar xzf %{SOURCE19} -C %{name}-ru --strip-components=1
+tar xzf %{SOURCE20} -C %{name}-sk --strip-components=1
+tar xzf %{SOURCE21} -C %{name}-sl
+tar xzf %{SOURCE22} -C %{name}-sv --strip-components=1
+tar xjf %{SOURCE23} -C %{name}-tr
+tar xzf %{SOURCE24} -C %{name}-tw --strip-components=1
+tar xzf %{SOURCE25} -C %{name}-zh --strip-components=1
+
+find -name CVS | xargs rm -vrf
+
 %install
 if [ ! -f install.stamp -o ! -d $RPM_BUILD_ROOT ]; then
 	rm -rf installed.stamp $RPM_BUILD_ROOT
-	install -d $RPM_BUILD_ROOT%{_docdir}/%{name}-{en,cs,da,de,el,es,fi,fr,he,hk,hu,it,ja,kr,nl,pl,pt_BR,ro,ru,sk,sl,sv,tr,tw,zh}
+	install -d $RPM_BUILD_ROOT%{_docdir}
 
-	tar xzf %{SOURCE0} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-en --strip-components=1
-	#tar xzf %{SOURCE1} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-ar
-	tar xzf %{SOURCE2} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-cs --strip-components=1
-	tar xzf %{SOURCE3} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-da --strip-components=1
-	tar xzf %{SOURCE4} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-de --strip-components=1
-	tar xzf %{SOURCE5} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-el --strip-components=1
-	tar xzf %{SOURCE6} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-es --strip-components=1
-	tar xzf %{SOURCE7} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-fi --strip-components=1
-	tar xzf %{SOURCE8} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-fr --strip-components=1
-	tar xjf %{SOURCE9} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-he
-	tar xzf %{SOURCE10} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-hk
-	tar xzf %{SOURCE11} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-hu --strip-components=1
-	tar xzf %{SOURCE12} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-it --strip-components=1
-	tar xzf %{SOURCE13} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-ja --strip-components=1
-	tar xzf %{SOURCE14} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-kr
-	tar xzf %{SOURCE15} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-nl --strip-components=1
-	tar xzf %{SOURCE16} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-pl --strip-components=1
-	tar xzf %{SOURCE17} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-pt_BR --strip-components=1
-	tar xzf %{SOURCE18} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-ro
-	tar xzf %{SOURCE19} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-ru --strip-components=1
-	tar xzf %{SOURCE20} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-sk --strip-components=1
-	tar xzf %{SOURCE21} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-sl
-	tar xzf %{SOURCE22} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-sv --strip-components=1
-	tar xjf %{SOURCE23} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-tr
-	tar xzf %{SOURCE24} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-tw --strip-components=1
-	tar xzf %{SOURCE25} -C $RPM_BUILD_ROOT%{_docdir}/%{name}-zh --strip-components=1
+	# test if we can hardlink -- %{_builddir} and $RPM_BUILD_ROOT on same partition
+	touch COPYING
+	if cp -al COPYING $RPM_BUILD_ROOT%{_docdir}/COPYING 2>/dev/null; then
+		l=l
+		rm -f $RPM_BUILD_ROOT%{_docdir}/COPYING
+	fi
+	rm -f COPYING
+
+	cp -a$l %{name}-* $RPM_BUILD_ROOT%{_docdir}
 
 	touch install.stamp
 fi
-
-find $RPM_BUILD_ROOT%{_docdir} -name CVS | xargs rm -vrf
 
 %clean
 rm -rf $RPM_BUILD_ROOT
