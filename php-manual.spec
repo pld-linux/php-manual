@@ -8,7 +8,7 @@ Summary(pl.UTF-8):	Podręcznik do PHP
 Name:		php-manual
 # last updated - is there better scheme?
 Version:	20120727
-Release:	1
+Release:	3
 License:	Open Publication License v1.0+
 Group:		Documentation
 Source0:	http://www.php.net/distributions/manual/php_manual_de.tar.gz
