@@ -5,37 +5,38 @@
 # - compare versions with versions.txt produced by prep-section
 
 %define		pl_ver 20121130
+%define		fr_ver 20150521
 Summary:	PHP manual
 Summary(pl.UTF-8):	Podręcznik do PHP
 Name:		php-manual
 # last updated - is there better scheme?
-Version:	20150520
+Version:	20150521
 # never decrease release unless all _ver macros are updated as well
 Release:	3
 License:	Open Publication License v1.0+
 Group:		Documentation
 Source0:	http://php.net/distributions/manual/php_manual_de.tar.gz
-# Source0-md5:	812230bb8242cdf57fa9ada0787f6101
+# Source0-md5:	6b3bf4456c3b1c2b88e345fd140f5160
 Source1:	http://php.net/distributions/manual/php_manual_en.tar.gz
-# Source1-md5:	0a272d1d99c33641a10743af8c140d6a
+# Source1-md5:	ba2bddadc88c74b0cccfc14a2b2e0bf7
 Source2:	http://php.net/distributions/manual/php_manual_es.tar.gz
-# Source2-md5:	39a8e522a1f07a2e44c2fa18f94a5915
+# Source2-md5:	871188d72b2730a327dff47099f543f1
 Source3:	http://php.net/distributions/manual/php_manual_fr.tar.gz
 # Source3-md5:	845ed5f912dbea6bc4146e4a04cce981
 Source4:	http://php.net/distributions/manual/php_manual_ja.tar.gz
-# Source4-md5:	f28638e54dbfc8305d9fdd3e7300dec4
+# Source4-md5:	9dc9fbb5bbff63ad1c459721456231cd
 Source5:	http://php.net/distributions/manual/php_manual_pl.tar.gz
 # Source5-md5:	a48d568a1a01aae421609eb7dc23af74
 Source6:	http://php.net/distributions/manual/php_manual_pt_BR.tar.gz
-# Source6-md5:	b592588f6fbe96af996f26c61cae57f7
+# Source6-md5:	2a4a9ad2f8f4bfa1fa809852acf6dfb3
 Source7:	http://php.net/distributions/manual/php_manual_ro.tar.gz
-# Source7-md5:	af07193d2bd7289dcc1da7f6dc37cd4d
+# Source7-md5:	ed57c0c03f90cf21d4849031f1ce2818
 Source8:	http://php.net/distributions/manual/php_manual_ru.tar.gz
-# Source8-md5:	479ffe15cf5a2b537f2e84e2132ed5cf
+# Source8-md5:	c03caa03d84b939babea6792f337d07b
 Source9:	http://php.net/distributions/manual/php_manual_tr.tar.gz
-# Source9-md5:	ee389ddfebed7069bc93afc4964ee2d7
+# Source9-md5:	e3d079fc7f7cc65b3c95c165ae22e495
 Source10:	http://php.net/distributions/manual/php_manual_zh.tar.gz
-# Source10-md5:	9cfabc30104c065d54648c2c3ee0d71d
+# Source10-md5:	2716f6a8ade062cd7a968c9468feecb7
 URL:		http://www.php.net/docs.php
 BuildRequires:	tar >= 1:1.15.1
 BuildArch:	noarch
@@ -139,6 +140,7 @@ Podręcznik do PHP przetłumaczony na język fiński.
 %package fr
 Summary:	PHP manual translated to French language
 Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język francuski
+Version:	%{fr_ver}
 Group:		Documentation
 
 %description fr
