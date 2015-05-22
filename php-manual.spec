@@ -1,38 +1,41 @@
 # NOTE
-# - Needs 981MB in RPM_BUILD_ROOT to package
+# - Needs 1,1G in RPM_BUILD_ROOT to package
 # - easy way to update all sources with new/old manuals:
-#   lynx -dump http://www.php.net/distributions/manual/ | awk '/http.*php_manual.*.tar.gz/{printf("Source%d: %s\n", i++, $2)}'
+#   lynx -dump http://php.net/download-docs.php | awk '/http.*php_manual.*.tar.gz/{printf("Source%d: %s\n", i++, $2)}'
+# - compare versions with versions.txt produced by prep-section
 
+%define		pl_ver 20121130
 Summary:	PHP manual
 Summary(pl.UTF-8):	Podręcznik do PHP
 Name:		php-manual
 # last updated - is there better scheme?
-Version:	20120727
+Version:	20150520
+# never decrease release unless all _ver macros are updated as well
 Release:	3
 License:	Open Publication License v1.0+
 Group:		Documentation
-Source0:	http://www.php.net/distributions/manual/php_manual_de.tar.gz
-# Source0-md5:	0f0f816c4846aeedf4627bd1072424a9
-Source1:	http://www.php.net/distributions/manual/php_manual_en.tar.gz
-# Source1-md5:	d2a36db770c77b52d4af5fd19ab7bd41
-Source2:	http://www.php.net/distributions/manual/php_manual_es.tar.gz
-# Source2-md5:	9d977633dff60df121c968184b39301f
-Source3:	http://www.php.net/distributions/manual/php_manual_fr.tar.gz
-# Source3-md5:	b7a1c3004b085e0bf7e31fba0db7c9c8
-Source4:	http://www.php.net/distributions/manual/php_manual_ja.tar.gz
-# Source4-md5:	794911f18ab64f9099cc4d4cc334cb31
-Source5:	http://www.php.net/distributions/manual/php_manual_pl.tar.gz
-# Source5-md5:	115f1b69dabe40cf312ef9843c12777d
-Source6:	http://www.php.net/distributions/manual/php_manual_pt_BR.tar.gz
-# Source6-md5:	4caff2177e00ff10add3831fe125d708
-Source7:	http://www.php.net/distributions/manual/php_manual_ro.tar.gz
-# Source7-md5:	c1eb977f9e6c1a34518b606ad6eb143c
-Source8:	http://www.php.net/distributions/manual/php_manual_ru.tar.gz
-# Source8-md5:	12b3ddd775c39d2a4fc3af240944d295
-Source9:	http://www.php.net/distributions/manual/php_manual_tr.tar.gz
-# Source9-md5:	3ee4d8b3cddbb2ec14b650d4f19a5724
-Source10:	http://www.php.net/distributions/manual/php_manual_zh.tar.gz
-# Source10-md5:	2146034be53f8a669c2e27f779c57730
+Source0:	http://php.net/distributions/manual/php_manual_de.tar.gz
+# Source0-md5:	812230bb8242cdf57fa9ada0787f6101
+Source1:	http://php.net/distributions/manual/php_manual_en.tar.gz
+# Source1-md5:	0a272d1d99c33641a10743af8c140d6a
+Source2:	http://php.net/distributions/manual/php_manual_es.tar.gz
+# Source2-md5:	39a8e522a1f07a2e44c2fa18f94a5915
+Source3:	http://php.net/distributions/manual/php_manual_fr.tar.gz
+# Source3-md5:	845ed5f912dbea6bc4146e4a04cce981
+Source4:	http://php.net/distributions/manual/php_manual_ja.tar.gz
+# Source4-md5:	f28638e54dbfc8305d9fdd3e7300dec4
+Source5:	http://php.net/distributions/manual/php_manual_pl.tar.gz
+# Source5-md5:	a48d568a1a01aae421609eb7dc23af74
+Source6:	http://php.net/distributions/manual/php_manual_pt_BR.tar.gz
+# Source6-md5:	b592588f6fbe96af996f26c61cae57f7
+Source7:	http://php.net/distributions/manual/php_manual_ro.tar.gz
+# Source7-md5:	af07193d2bd7289dcc1da7f6dc37cd4d
+Source8:	http://php.net/distributions/manual/php_manual_ru.tar.gz
+# Source8-md5:	479ffe15cf5a2b537f2e84e2132ed5cf
+Source9:	http://php.net/distributions/manual/php_manual_tr.tar.gz
+# Source9-md5:	ee389ddfebed7069bc93afc4964ee2d7
+Source10:	http://php.net/distributions/manual/php_manual_zh.tar.gz
+# Source10-md5:	9cfabc30104c065d54648c2c3ee0d71d
 URL:		http://www.php.net/docs.php
 BuildRequires:	tar >= 1:1.15.1
 BuildArch:	noarch
@@ -213,6 +216,7 @@ Podręcznik do PHP przetłumaczony na język holenderski.
 %package pl
 Summary:	PHP manual translated to Polish language
 Summary(pl.UTF-8):	Podręcznik do PHP przetłumaczony na język polski
+Version:	%{pl_ver}
 Group:		Documentation
 
 %description pl
@@ -380,73 +384,21 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-en
 
-%if 0
-%files ar
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-ar
-
-%files cs
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-cs
-%endif
-
-%if 0
-%files da
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-da
-%endif
-
 %files de
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-de
-
-%if 0
-%files el
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-el
-%endif
 
 %files es
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-es
 
-%if 0
-%files fi
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-fi
-%endif
-
 %files fr
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-fr
 
-%if 0
-%files he
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-he
-
-%files hu
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-hu
-
-%files it
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-it
-%endif
-
 %files ja
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-ja
-
-%if 0
-%files ko
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-kr
-
-%files nl
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-nl
-%endif
 
 %files pl
 %defattr(644,root,root,755)
@@ -464,7 +416,55 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-ru
 
+%files tr
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-tr
+
+%files zh_CN
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-zh
+
 %if 0
+%files ar
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-ar
+
+%files cs
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-cs
+
+%files da
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-da
+
+%files el
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-el
+
+%files fi
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-fi
+
+%files he
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-he
+
+%files hu
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-hu
+
+%files it
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-it
+
+%files ko
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-kr
+
+%files nl
+%defattr(644,root,root,755)
+%doc %{_docdir}/%{name}-nl
+
 %files sk
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-sk
@@ -476,17 +476,7 @@ rm -rf $RPM_BUILD_ROOT
 %files sv
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-sv
-%endif
 
-%files tr
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-tr
-
-%files zh_CN
-%defattr(644,root,root,755)
-%doc %{_docdir}/%{name}-zh
-
-%if 0
 %files zh_HK
 %defattr(644,root,root,755)
 %doc %{_docdir}/%{name}-hk
